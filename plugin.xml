@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-renderer-recovery"
+        version="1.0.0">
+
+    <name>RendererRecovery</name>
+    <description>Recovers the app when the Chromium renderer process crashes instead of letting Android kill the whole app.</description>
+    <license>Apache 2.0</license>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RendererRecovery">
+                <param name="android-package" value="com.latinad.player.plugin.RendererRecovery"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/RendererRecovery.java"
+                     target-dir="src/com/latinad/player/plugin"/>
+    </platform>
+
+</plugin>
