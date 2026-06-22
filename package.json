@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-renderer-recovery",
+  "version": "1.0.0",
+  "description": "Recovers the app when the Chromium renderer process crashes instead of letting Android kill the whole app.",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "android"
+  ],
+  "license": "Apache-2.0"
+}
